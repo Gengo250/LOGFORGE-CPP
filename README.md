@@ -44,7 +44,7 @@ O **LogForge** é um CLI em C++20 que resolve isso com um pipeline simples e pro
 
 ---
 
-## Por que isso é diferencial no currículo
+## Por que este projeto é diferencial?
 
 Este projeto não é “só um código que compila”. Ele demonstra exatamente o que empresas procuram em estágio/júnior:
 
