@@ -1,0 +1,25 @@
+# Build (CMake)
+build*/
+cmake-build*/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+compile_commands.json
+
+# Outputs
+out*/
+
+# Binaries / objects
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+
+# IDEs / editors
+.vscode/
+.idea/
+.DS_Store

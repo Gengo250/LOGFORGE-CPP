@@ -1,0 +1,5 @@
+127.0.0.1 - - [10/Oct/2000:13:55:36 -0700] "GET /api/items?id=1 HTTP/1.1" 200 2326 "-" "Mozilla/5.0" 0.245
+127.0.0.1 - - [10/Oct/2000:13:55:40 -0700] "GET /api/items?id=2 HTTP/1.1" 200 100 "-" "Mozilla/5.0" 0.090
+127.0.0.1 - - [10/Oct/2000:13:56:01 -0700] "POST /api/checkout HTTP/1.1" 500 42 "-" "Mozilla/5.0" 0.510
+127.0.0.1 - - [10/Oct/2000:13:56:15 -0700] "GET /health HTTP/1.1" 200 5 "-" "Mozilla/5.0" 0.002
+MALFORMED LINE SHOULD BE COUNTED AS INVALID
