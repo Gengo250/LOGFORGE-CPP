@@ -79,7 +79,7 @@ Depois de rodar, o LogForge entrega sinais claros como:
 
 ## Por que este projeto é diferencial?
 
-Este projeto não é “só um código que compila”. Ele demonstra exatamente o que empresas procuram em estágio/júnior:
+Este projeto não é “só um código que compila”. Ele demonstra exatamente o que empresas procuram:
 
 - **Pensamento de produção**: tolerância a logs sujos (linhas inválidas não derrubam o programa)
 - **Performance real**: streaming, parsing eficiente (sem regex), baixa pressão de memória
