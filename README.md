@@ -219,33 +219,9 @@ logforge/
   .github/workflows/     # CI (opcional)
 ```
 
----
-
-## Roadmap (ideias de evolução)
-
-- `--format auto` e suporte a mais formatos (Apache/app logs)
-- Export `.jsonl` para ingestão estilo ELK
-- Métricas extras:
-  - error rate por endpoint
-  - top endpoints por status (ex: top 500)
-  - heatmap por minuto
-- CI mais completa:
-  - sanitizers no GitHub Actions
-  - clang-format/clang-tidy
-- Parser ainda mais rápido (redução de cópias e alocações)
 
 ---
 
-## Como citar no currículo (exemplo)
-
-**LogForge (C++20)**: analisador de logs em streaming com métricas de observabilidade e relatórios JSON/CSV. Projeto com foco em performance e qualidade (CMake, testes, sanitizers, benchmark).
-
----
-
-## Licença
-Defina uma licença (MIT é comum) e adicione um `LICENSE` se quiser publicar publicamente.
-
----
 
 <div align="center">
 
