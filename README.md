@@ -44,7 +44,7 @@ O **LogForge** é um CLI em C++20 que resolve isso com um pipeline simples e pro
 
 ---
 
-## Exemplo de uso em situação real (bem direto)
+## Exemplo de uso em situação real
 
 Imagine que um site/app começou a receber reclamações do nada:
 
