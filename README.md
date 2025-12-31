@@ -44,6 +44,39 @@ O **LogForge** é um CLI em C++20 que resolve isso com um pipeline simples e pro
 
 ---
 
+## Exemplo de uso em situação real (bem direto)
+
+Imagine que um site/app começou a receber reclamações do nada:
+
+- “Tá lento”
+- “Não consigo finalizar compra”
+- “Algumas páginas não abrem”
+
+Você suspeita que algo aconteceu por volta de **13:56**, mas precisa de evidência. O arquivo de log (ex.: Nginx `access.log`) é o “diário” do servidor. Com o LogForge, você faz um diagnóstico inicial em minutos:
+
+### 1) Rodar no log do servidor
+```bash
+./build/logforge --in /var/log/nginx/access.log --out out
+```
+
+### 2) O que você procura nos relatórios
+Depois de rodar, o LogForge entrega sinais claros como:
+
+- **Requests por minuto**: aparece um pico exatamente em `2025-01-01 13:56`
+- **Status HTTP**: aumento forte de **500** (erro interno)
+- **Top endpoints**: `/api/checkout` ou `/login` dominando acessos (e erros)
+- **Latência p95**: antes ~200ms, agora ~1500ms (piorou muito)
+
+### 3) Tradução “em português normal”
+- “Teve pico de tráfego naquele minuto (pode ser campanha, bot ou incidente)”
+- “O sistema começou a quebrar por dentro (muitos 500)”
+- “O gargalo parece estar concentrado em um endpoint específico”
+- “A maioria dos usuários sentiu lentidão real (p95 alto)”
+
+✅ Resultado: em vez de chutar, você aponta **quando começou**, **onde dói**, **qual o tipo de falha** e **qual o impacto**.
+
+---
+
 ## Por que este projeto é diferencial?
 
 Este projeto não é “só um código que compila”. Ele demonstra exatamente o que empresas procuram em estágio/júnior:
